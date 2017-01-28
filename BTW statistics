@@ -1,0 +1,138 @@
+----- COOKING-FURNACE -----
+2:40(160)	~	iron ore, stone
+Birch log ~ 3:20 (200)
+
+----- Geometry -----
+Pk(-41,356) -> Pokol(-5,44)
+
+P1-P2(109, 3916) House
+P2(-227,-3552) Big Falu -> (76, 58, -409)
+d(P1,P2)=3917 ~ 489,6 a pokolban
+
+
+/scoreboard teams add purple
+/scoreboard teams join purple Ganter Sky Armakap Patesz
+/scoreboard teams option purple friendlyfire false
+========================================
+=====          LOCATIONS          ======      
+========================================
+creative area:	tp 1001000 100 1000000
+Home:		tp -98 64 385
+Pokol kapu:	tp -45 64 354
+
+
+========================================
+=====        KERESKEDELEM         ======      
+========================================
+
+    FARMER
+    ------
+		1.szint:
+			Vesz: rönkök, dirt, brown wool, bone meal
+			Ad:
+    	2.szint: kapa
+    		Vesz: hemp mag, kakaóbab, tojás, cukor, gomba, liszt, glass pane
+			Ad:	alma
+	
+  	 BUTCHER
+    -------
+    	1.szint:
+	    	Vesz: nyíl
+	    	Ad: tehénhús, hal, csirke,
+    	2.szint: cauldron
+			Vesz: dung, wolfchop
+	    	Ad: chowder, porkchop
+	
+   PRIEST
+   ---------
+    	Vesz:	kaktusz, festmény, flint&steel, hemp
+    	Ad:
+    	2.szint: enchanttable
+    	Vesz:	piros gomba
+    	Ad:	
+    	
+	SMITH
+	-----
+		1.szint:
+			Vesz:	szén, vas(6), birch wood
+			Ad:	vas csákány()
+		2.szint:
+			Vesz:	crepper oyster
+			Ad:	iron chestplate, iron leggings
+
+	LIBRARIAN
+	---------
+		1.szint:
+			Vesz:	ink sack, paper, feather
+			Ad:	
+		2.szint:	óra
+			Vesz:	nitre, glowstone dust, bat wings, spider eye, bookshelf, nether warte
+			Ad:	
+
+========================================
+=====           HOPPER            ======      
+========================================
+
+ha víz folyik akkor a 3-4-eshopperbe nem jut folyó item
+
+|==========================================================|
+| Filter     | Blocked            | Enters Hopper          |
+|==========================================================|
+| Wicker     | Not powdery        | Powdery                |
+| Slats      | Thick              | Thin                   |
+| Grate      | Large Items        | Small Items            |
+| Trapdoor   | Mid-sized items    | Small or longish Items |
+| Iron Bars  | Unstackable items  | Stackable items        |
+| Ladder     | Solid Blocks       | Items                  |
+===========================================================|
+
+SzörnyDroppok: rFlesh, zHead, skull, bow, rArrow, bone, crHead, nitre, cHere, spiderEye, string, vasCuccok, arcaneScroll
+Wicker:	   nitre                                   | rFlesh, zHead, skull, bow, rArrow, bone, crHead, cHere, spiderEye,  string, vasCuccok
+Grate:	   nitre, cHere, spiderEye, arcaneScroll   | rFlesh, zHead, skull, bow, rArrow, bone, crHead, string, vasCuccok
+Slats:     nitre, string, arcaneScroll             | str rFlesh, zHead, skull, bow, rArrow, bone, crHead, cHere, spiderEye,
+Ladder:	   rFlesh, rArrow, bone, string, nitre, cHere, spiderEye, vasCuccok bow, arcaneScroll | zHead, skull, crHead, 
+iron bars: rFlesh, rArrow, bone, string, nitre, cHere, spiderEye, vasCuccok, arcaneScroll     | zHead, skull, bow, crHead, 
+trap door:  rArrow, bone, string, nitre, cHere, spiderEye, arcaneScroll                       | rFlesh, zHead, skull, bow, crHead, vasCuccok
+
+========================================
+=====            VÍZ              ======      
+========================================
+-----    ÚSZIK    -----
+cHere, skull, rFlesh, zHead, rArrow, bone, bow, string, arcaneScroll
+-----    LEBEG    -----
+spiderEye
+-----   SÜLLYED   -----
+VasCuccok, nitre
+
+hoppertől lefele 10 blok kell
+
+rFlesh, zHead, skull, bow, rArrow, bone, crHead
+
+	1. waterfall
+	2. dropin + wicker -> nitre
+!FL	3. -
+!FL	4. grate -> spiderEye
+	5. -
+	6. slats -> string, arcane scrollww
+	7. -
+	8. waterDrop, nincs hopper
+	9. 
+!FL	10. ures -> vasCuccok
+!FL	11 
+	12. grate -> cHere
+	13.
+	14. trapDoor -> rArrow, bone
+	15. drop ironBars -> rFleshe
+	16. 
+!FL	17. 
+!FL	18. 
+	19. ladder->bow
+	20. 
+	21. zHead, skull, crHead, 
+	22. 
+Ladder:	   rFlesh, rArrow, bone,  bow | zHead, skull, crHead, 
+iron bars: rFlesh, rArrow, bone,      | zHead, skull, bow, crHead, 
+trap door:  rArrow, bone,
+
+spawner alá, a gyűjtőhoppertől kezdve 11 block kell minimum, min 22 széles
+
